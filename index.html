@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soluta Automação | Automação Industrial</title>
+<meta name="description" content="Soluta Automação - soluções em automação industrial. Entre em contato.">
+<style>
+  :root {
+    --bg: #0f1720;
+    --card: #17212c;
+    --text: #e8edf2;
+    --muted: #9aa8b6;
+    --accent: #f5a524;
+    --line: #26323f;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+  }
+  main {
+    flex: 1;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 20px 40px;
+  }
+  .logo {
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .logo span { color: var(--accent); }
+  .tag {
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
+  .intro {
+    margin: 32px 0 40px;
+    font-size: 1.15rem;
+    color: var(--text);
+    max-width: 600px;
+  }
+  .intro small {
+    display: block;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 12px;
+  }
+  h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color .2s, transform .2s;
+  }
+  a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card .label { color: var(--muted); font-size: 0.85rem; }
+  .card .value { font-size: 1.05rem; font-weight: 600; word-break: break-word; }
+  .btn {
+    display: inline-block;
+    margin-top: 32px;
+    background: var(--accent);
+    color: #111;
+    font-weight: 700;
+    padding: 14px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .btn:hover { filter: brightness(1.08); }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding: 24px 16px;
+    border-top: 1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="logo">Soluta<span>.</span></div>
+  <div class="tag">Automação Industrial</div>
+
+  <p class="intro">
+    Soluções em automação industrial para tornar seus processos mais eficientes, seguros e confiáveis.
+    <small>Nosso site completo está em construção. Fale conosco pelos canais abaixo.</small>
+  </p>
+
+  <h2>Contato</h2>
+  <div class="grid">
+    <!-- TROQUE os dados abaixo pelos dados reais -->
+    <a class="card" href="https://wa.me/5500000000000" target="_blank" rel="noopener">
+      <div class="label">WhatsApp</div>
+      <div class="value">(00) 00000-0000</div>
+    </a>
+    <a class="card" href="mailto:contato@solutautomacao.com.br">
+      <div class="label">E-mail</div>
+      <div class="value">contato@solutautomacao.com.br</div>
+    </a>
+    <div class="card">
+      <div class="label">Localização</div>
+      <div class="value">Cidade - UF</div>
+    </div>
+  </div>
+
+  <a class="btn" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Solicitar orçamento</a>
+</main>
+<footer>
+  © <span id="ano"></span> Soluta Automação · solutautomacao.com.br
+</footer>
+<script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>
