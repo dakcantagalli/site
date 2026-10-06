@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Soluta Automação | Automação Industrial</title>
-<meta name="description" content="Soluta Automação - soluções em automação industrial. Entre em contato.">
+<title>Solut Automação | Automação Industrial em Maringá - PR</title>
+<meta name="description" content="Solut Automação - soluções em automação industrial em Maringá - PR. Fale conosco pelo WhatsApp (44) 98827-0809.">
+<link rel="icon" type="image/png" href="logo.png">
 <style>
   :root {
-    --bg: #0f1720;
-    --card: #17212c;
-    --text: #e8edf2;
-    --muted: #9aa8b6;
+    --bg: #0f1216;
+    --card: #181c22;
+    --text: #e8eaec;
+    --muted: #9aa1a8;
     --accent: #f5a524;
-    --line: #26323f;
+    --line: #2a3038;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -27,28 +28,15 @@
   main {
     flex: 1;
     width: 100%;
-    max-width: 760px;
+    max-width: 980px;
     margin: 0 auto;
-    padding: 64px 20px 40px;
+    padding: 64px 20px 48px;
   }
-  .logo {
-    font-size: 2.4rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-  }
-  .logo span { color: var(--accent); }
-  .tag {
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-size: 0.8rem;
-    margin-top: 4px;
-  }
+  .logo { width: 300px; max-width: 80%; height: auto; display: block; }
   .intro {
-    margin: 32px 0 40px;
-    font-size: 1.15rem;
-    color: var(--text);
-    max-width: 600px;
+    margin: 36px 0 44px;
+    font-size: 1.2rem;
+    max-width: 640px;
   }
   .intro small {
     display: block;
@@ -65,7 +53,7 @@
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 14px;
   }
   .card {
@@ -80,9 +68,10 @@
   a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
   .card .label { color: var(--muted); font-size: 0.85rem; }
   .card .value { font-size: 1.05rem; font-weight: 600; word-break: break-word; }
+  .card .sub { color: var(--muted); font-size: 0.9rem; margin-top: 2px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
   .btn {
     display: inline-block;
-    margin-top: 32px;
     background: var(--accent);
     color: #111;
     font-weight: 700;
@@ -91,6 +80,20 @@
     text-decoration: none;
   }
   .btn:hover { filter: brightness(1.08); }
+  .btn.outline {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--line);
+  }
+  .btn.outline:hover { border-color: var(--accent); }
+  .map {
+    margin-top: 44px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 320px;
+  }
+  .map iframe { width: 100%; height: 100%; border: 0; display: block; }
   footer {
     text-align: center;
     color: var(--muted);
@@ -102,8 +105,7 @@
 </head>
 <body>
 <main>
-  <div class="logo">Soluta<span>.</span></div>
-  <div class="tag">Automação Industrial</div>
+  <img class="logo" src="logo.png" alt="Solut Automação">
 
   <p class="intro">
     Soluções em automação industrial para tornar seus processos mais eficientes, seguros e confiáveis.
@@ -112,25 +114,33 @@
 
   <h2>Contato</h2>
   <div class="grid">
-    <!-- TROQUE os dados abaixo pelos dados reais -->
-    <a class="card" href="https://wa.me/5500000000000" target="_blank" rel="noopener">
+    <a class="card" href="https://wa.me/5544988270809" target="_blank" rel="noopener">
       <div class="label">WhatsApp</div>
-      <div class="value">(00) 00000-0000</div>
+      <div class="value">(44) 98827-0809</div>
     </a>
-    <a class="card" href="mailto:contato@solutautomacao.com.br">
+    <a class="card" href="mailto:solut@solutautomacao.com.br">
       <div class="label">E-mail</div>
-      <div class="value">contato@solutautomacao.com.br</div>
+      <div class="value">solut@solutautomacao.com.br</div>
     </a>
-    <div class="card">
-      <div class="label">Localização</div>
-      <div class="value">Cidade - UF</div>
-    </div>
+    <a class="card" href="https://maps.app.goo.gl/3GNr8VzuAN6uCNkK7" target="_blank" rel="noopener">
+      <div class="label">Endereço</div>
+      <div class="value">Av. José Alves dos Santos, 4402</div>
+      <div class="sub">Jd. Brasil · Maringá - PR · <span style="white-space:nowrap">CEP 87083-250</span></div>
+    </a>
   </div>
 
-  <a class="btn" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Solicitar orçamento</a>
+  <div class="actions">
+    <a class="btn" href="https://wa.me/5544988270809?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">Solicitar orçamento</a>
+    <a class="btn outline" href="https://maps.app.goo.gl/3GNr8VzuAN6uCNkK7" target="_blank" rel="noopener">Como chegar</a>
+  </div>
+
+  <div class="map">
+    <iframe title="Localização da Solut Automação" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Av.+Jos%C3%A9+Alves+dos+Santos,+4402,+Maring%C3%A1+-+PR,+87083-250&output=embed"></iframe>
+  </div>
 </main>
 <footer>
-  © <span id="ano"></span> Soluta Automação · solutautomacao.com.br
+  © <span id="ano"></span> Solut Automação · Maringá - PR · solutautomacao.com.br
 </footer>
 <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
 </body>
